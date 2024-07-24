@@ -1,0 +1,65 @@
+<div class="watchlist nav-logo">
+  <div class="create-watchlist-card nav-logo">
+    <div class="nav-logo" style="margin-right: 35px">
+      <mat-icon>
+        list
+      </mat-icon>
+      <p style="justify-items: center">Watchlist</p>
+    </div>
+    <mat-icon (click)="toggleCreateWatchlistPopup()" class="watchlist-icon icon-hover">
+      playlist_add
+    </mat-icon>
+  </div>
+</div>
+<div>
+  @if (createWatchlistClicked) {
+    <div class="login-card">
+      <div class="card-title">
+        <h1>Create Watchlist</h1>
+      </div>
+      <form [formGroup]="watchlistForm" (ngSubmit)="createWatchlist()" class="login-form">
+        <input type="text" placeholder="Enter name of watchlist: " required formControlName="watchlistName">
+        @if (watchlistForm.controls['watchlistName'].hasError('required')) {
+          <div>
+            <span class="error">Watchlist name is required!</span>
+          </div>
+        }
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  }
+</div>
+@if (!this.watchlistClicked) {
+  <div class="watchlists">
+    <h3>Watchlists</h3>
+    @if (watchlists?.length === 0) {
+      <p>No watchlists found.</p>
+    }
+
+    @else if (watchlists?.length > 0) {
+      <div class="watchlist-grid-parent">
+        @for (watchlist of watchlists; track watchlist._id) {
+          <a (click)="toggleWatchlistDetail()">
+            <div class="watchlist-card">
+              <h5>{{ watchlist.name }}</h5>
+              <p>Created on - {{ get_ts_date(watchlist.creation_date.$date) }}</p>
+              <ul>
+                @for (investment of watchlist.investments; track investment.symbol) {
+                  <li>
+                    {{ investment.symbol }}
+                  </li>
+                }
+              </ul>
+            </div>
+          </a>
+        }
+      </div>
+    }
+  </div>
+} @else {
+  <div class="watchlists">
+    <mat-icon (click)="toggleWatchlistDetail()" class="watchlist-icon icon-hover">
+      arrow_back
+    </mat-icon>
+  </div>
+}

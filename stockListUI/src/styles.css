@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mat-app-background {
+  background: #191c1c;
+}
+
+.nav-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.toolbar-flex {
+  display: flex;
+}
+
+.flex-spacer {
+  flex-grow: 1;
+}
+
+.preserve-whitespace {
+  white-space: pre;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:link, a:visited {
+  color: #0dd;
+}
+a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+}

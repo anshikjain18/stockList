@@ -1,0 +1,119 @@
+.watchlist {
+  padding: 15px 15%;
+  justify-content: center;
+}
+
+.create-watchlist-card {
+  padding: 20px 30px;
+  margin: 0 20px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  border-color: #0dd;
+}
+
+mat-icon {
+  font-size: 35px;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-hover:hover {
+  color: #0dd;
+}
+
+p {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.watchlist-icon {
+  z-index: 2;
+  cursor: pointer;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #004f4f;
+  border-radius: 10px;
+  padding: 30px 30px;
+  width: 50%;
+}
+
+.login-card input {
+  margin: 5px 0;
+  width: 30%;
+  background-color: #191c1c;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.login-card button {
+  margin: 5px 0;
+  background-color: #4796ff;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 8px 15px;
+  width: 30%;
+}
+
+.card-title h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.watchlists {
+  margin: 16px;
+}
+
+.watchlist-card {
+  padding: 15px;
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  border-color: #0dd;
+}
+
+.watchlist-card:hover {
+  color: #0dd;
+}
+
+.watchlist-card p {
+  font-size: 15px;
+}
+
+.watchlist-grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+a:link {
+  color: #ffffff;
+}
+a:visited {
+  /*color: #ffffff;*/
+}
+a:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}

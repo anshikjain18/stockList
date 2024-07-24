@@ -1,0 +1,9 @@
+.footer {
+  color: #0dd;
+  padding: 10px 25px;
+}
+
+#footer-spacer {
+  justify-content: center;
+  align-items: flex-end;
+}
