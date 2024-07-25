@@ -1,0 +1,12 @@
+pyotp==2.9.0
+requests==2.32.2
+mongoengine==0.28.2
+flask==2.2.5
+werkzeug==2.3.8
+pandas==2.2.2
+pymongo==4.7.3
+python-dotenv==1.0.1
+Flask-CORS==4.0.1
+Flask-JWT-Extended==4.6.0
+flask-swagger-ui==4.11.1
+flask-mongoengine==1.0.0

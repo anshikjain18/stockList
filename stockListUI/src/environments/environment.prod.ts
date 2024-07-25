@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://my-prod-url',
+  apiUrl: process.env['API_HOST'],
   uiUrl: 'https://anshikjain.tech/stocklist'
 };
 
