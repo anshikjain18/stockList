@@ -13,7 +13,7 @@ export class AuthService {
   constructor() { }
 
   httpClient = inject(HttpClient);
-  apiUrl = environment.apiUrl
+  apiUrl = environment.apiUrl;
   router = inject(Router);
 
   signup(data: any) {

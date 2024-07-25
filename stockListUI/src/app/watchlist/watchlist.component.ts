@@ -23,7 +23,6 @@ export class WatchlistComponent implements OnInit{
   createWatchlistClicked: boolean = false;
   watchlistClicked: boolean = false;
   apiUrl = environment.apiUrl;
-  uiUrl = environment.uiUrl;
   watchlistName: string = '';
   watchlists: any;
   protected watchlistForm: FormGroup;
