@@ -4,4 +4,7 @@
 */.angular
 *__pycache__*
 .editorconfig
-.env
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
