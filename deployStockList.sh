@@ -6,6 +6,7 @@ cp ../.env .
 cd stockListBackend
 
 # activating python virtual environment
+python3 -m venv stockList
 source stockList/bin/activate
 
 # installing python dependencies
