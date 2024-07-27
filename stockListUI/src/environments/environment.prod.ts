@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: import.meta.env.API_HOST,
+  apiUrl: 'http://api.anshikjain.tech/stocklist',
   uiUrl: 'https://anshikjain.tech/stocklist'
 };

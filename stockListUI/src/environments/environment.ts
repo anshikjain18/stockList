@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  apiUrl: import.meta.env.API_HOST,
+  apiUrl: 'http://localhost:5000/',
   uiUrl: 'http://localhost:4200/'
 };
