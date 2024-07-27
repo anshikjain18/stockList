@@ -3,6 +3,9 @@
 # copying the environment file to the directory
 cp ../.env .
 
+# edit the mongodb URI
+sed -i 's/\\//g' .env
+
 cd stockListBackend
 
 # activating python virtual environment
