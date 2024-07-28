@@ -16,4 +16,6 @@ source stockList/bin/activate
 pip install -r requirements.txt
 
 # running backend
-python3 main.py
+sudo systemctl daemon-reload
+sudo systemctl start stockList
+sudo systemctl enable stockList
