@@ -10,7 +10,6 @@ import {APP_BASE_HREF} from "@angular/common";
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/stocklist/' },
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideClientHydration(),
