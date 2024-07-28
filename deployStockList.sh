@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # copying the environment file to the directory
-cp ../.env .
+cp ../.env stockListBackend/
 
 # edit the mongodb URI
-sed -i 's/\\//g' .env
+sed -i 's/\\//g' stockListBackend/.env
 
 cd stockListBackend
 
@@ -16,6 +16,4 @@ source stockList/bin/activate
 pip install -r requirements.txt
 
 # running backend
-sudo systemctl daemon-reload
-sudo systemctl start stockList
-sudo systemctl enable stockList
+python3 main.py
