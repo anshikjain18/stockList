@@ -15,7 +15,5 @@ source stockList/bin/activate
 # installing python dependencies
 pip install -r requirements.txt
 
-cd ../stockListUI
-
-# installing npm dependencies
-npm install
+# running backend
+python3 main.py
