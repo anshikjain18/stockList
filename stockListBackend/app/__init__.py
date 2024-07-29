@@ -41,7 +41,7 @@ def configure_mongodb(app):
 
 
 def configure_cors(app):
-    CORS(app, origin=[os.getenv('STOCKLIST_UI_URL')])
+    CORS(app, origin=[os.getenv('STOCKLIST_UI_URL'), os.getenv('STOCKLIST_API_URL')])
 
 
 def configure_jwt(app):
