@@ -19,3 +19,4 @@ pip install -r requirements.txt
 sudo systemctl daemon-reload
 sudo systemctl start stocklist
 sudo systemctl enable stocklist
+sudo systemctl restart stocklist
